@@ -3,36 +3,27 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LircSharpAPI.Models
 {
-	public class Remote 
-	{
-		[Required]
-		private string _name;
-		private List<RemoteCode> _remoteCodes;
-		
-		public Remote()
+	public class Remote
+    {
+        [Required]
+        public string Name { get; set; }
+
+        public List<RemoteCode> Codes { get; set; }
+
+        public Remote()
 		{
-			_remoteCodes = new List<RemoteCode>();
+			Codes = new List<RemoteCode>();
 		}
+
 		public Remote(string name)
+            : this()
 		{
-			_remoteCodes = new List<RemoteCode>();
-			_name = name;
+			Name = name;
 		}
-		
-		public string Name
-		{
-			get { return _name; }
-			set { _name = value;}
-		}
-		
-		public List<RemoteCode> Codes
-		{
-			get { return _remoteCodes; }
-			set { _remoteCodes = value; }
-		}
+
 		public void AddCode(RemoteCode code)
 		{
-			_remoteCodes.Add(code);
+			Codes.Add(code);
 		}
 	}
 }
