@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LircSharpAPI", "LircSharpAPI\LircSharpAPI.csproj", "{00083529-9BB7-486A-858E-818F2AF457D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LircSharpAPI.Example", "LircSharpAPI.Example\LircSharpAPI.Example.csproj", "{7F56FA09-3453-47E4-8489-5FA0F49AEDD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00083529-9BB7-486A-858E-818F2AF457D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00083529-9BB7-486A-858E-818F2AF457D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00083529-9BB7-486A-858E-818F2AF457D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00083529-9BB7-486A-858E-818F2AF457D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F56FA09-3453-47E4-8489-5FA0F49AEDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F56FA09-3453-47E4-8489-5FA0F49AEDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F56FA09-3453-47E4-8489-5FA0F49AEDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F56FA09-3453-47E4-8489-5FA0F49AEDD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00FFCC55-5F36-43A1-9D0C-8BE90E33DF7E}
+	EndGlobalSection
+EndGlobal
