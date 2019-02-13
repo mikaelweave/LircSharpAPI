@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LircSharpAPI.Models
 {
-	public class Remote
+    public class Remote
     {
         [Required]
         public string Name { get; set; }
@@ -11,19 +11,19 @@ namespace LircSharpAPI.Models
         public List<RemoteCode> Codes { get; set; }
 
         public Remote()
-		{
-			Codes = new List<RemoteCode>();
-		}
+        {
+            Codes = new List<RemoteCode>();
+        }
 
-		public Remote(string name)
+        public Remote(string name)
             : this()
-		{
-			Name = name;
-		}
+        {
+            Name = name;
+        }
 
-		public void AddCode(RemoteCode code)
-		{
-			Codes.Add(code);
-		}
-	}
+        public void AddCode(RemoteCode code)
+        {
+            Codes.Add(code);
+        }
+    }
 }
