@@ -6,12 +6,12 @@ using LircSharpAPI.Models;
 namespace LircSharpAPI.DAL
 {
 	public class DAL
-	{
-		
+    {
 		private static List<Remote> remoteList;
 		
 		public DAL()
-		{}
+		{
+        }
 		
 		public Remote GetRemote(string name)
 		{
@@ -90,7 +90,8 @@ namespace LircSharpAPI.DAL
 				do
 				{
 					line = reader.ReadLine();
-					if (line != null && line.StartsWith("irsend: ")) {
+					if (line != null && line.StartsWith("irsend: "))
+                    {
 						code = new RemoteCode();
 						code.Name = line.Split(' ')[2];
 						code.Command = line.Split(' ')[1];
